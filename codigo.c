@@ -95,11 +95,14 @@ int main() {
     }
 
     // 3. Definição dos tamanhos de vetor para teste (10^5, 10^6, 10^7)
-    long sizes[] = {
-        100000,     // 10^5
-        1000000,    // 10^6 
-        10000000,   // 10^7
-    };
+    long long sizes[] = {
+    // Tamanhos de Benchmark Prático (Testes de Cache e RAM)
+    100000LL,       // 10^5 (0.4 MB)
+    1000000LL,      // 10^6 (4 MB)
+    10000000LL,     // 10^7 (40 MB)
+    100000000LL,    // 10^8 (400 MB)
+    // 1000000000LL,   // 10^9 (4 GB) - Limite prático de RAM em sistemas 32-bit (ou pouco RAM em 64-bit) - traava meu wsl
+};
     int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
 
     printf("Resultados serão salvos em: %s\n", output_file);
