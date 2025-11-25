@@ -1,0 +1,6 @@
+Sequential access time: 0.000130 seconds
+Random access time: 0.000142 seconds
+Sequential access time: 0.001123 seconds
+Random access time: 0.005571 seconds
+Sequential access time: 0.009269 seconds
+Random access time: 0.103490 seconds
